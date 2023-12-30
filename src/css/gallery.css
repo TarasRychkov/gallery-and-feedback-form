@@ -1,0 +1,32 @@
+
+.gallery {
+    display: flex;
+    gap: 20px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.gallery>li {
+    box-shadow: 0px 5px 5px rgba(108, 242, 240, 0.1),
+        -20px -20px 60px rgba(64, 245, 245, 0.14);
+    transition: transform 300ms ease-in;
+    border-radius: 4px;
+}
+
+.gallery>li:hover,
+.gallery>li:focus {
+    transform: scale(1.1);
+}
+
+.gallery-link:hover {
+    cursor: url("/img/zoom-in.svg"), auto;
+}
+
+.gallery-image {
+    display: block;
+    width: 360px;
+    height: 300px;
+    border-radius: 5px;
+}

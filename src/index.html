@@ -2,23 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 9</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet!!!</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <ul class="nav-list">
+      <li>
+        <a class="nav-link" href="../1-gallery.html">Image gallery</a>
+      </li>
+      <li>
+        <a class="nav-link" href="../2-form.html">Feedback form</a>
+      </li>
+    </ul>
+    <section class="main-promo">
+      <div class="container">
+        <div class="wrapper">
+          <p class="text">Homework 9</p>
+          <p class="tagline">
+            Homework was completed by <br /><span class="name-student"
+              >Anna Rychkova</span
+            >
+            <br />a student FSON 97
+          </p>
+          <p class="text">
+            Made in <span class="gradient">Vite</span> +
+            <img class="js-svg" src="./img/javascript.svg" alt="JavaScript" />
+          </p>
+        </div>
+        <div class="thumb">
+          <img
+            class="pic"
+            src="./img/vite-logo.png"
+            alt="Vite logo"
+            width="640"
+            height="640"
+          />
+        </div>
+      </div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/1-gallery.js"></script>
+    <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
